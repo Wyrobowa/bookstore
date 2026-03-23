@@ -19,7 +19,7 @@
     "next": "^16",
     "react": "^19",
     "react-dom": "^19",
-    "tharaday": "^0.6.0"
+    "tharaday": "^0.6.1"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
@@ -27,11 +27,11 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "babel-plugin-react-compiler": "1.0.0",
-    "eslint": "^10.0.3",
+    "eslint": "^10.1.0",
     "eslint-config-prettier": "^10",
     "eslint-plugin-prettier": "^5",
     "prettier": "^3",
     "typescript": "^5",
-    "typescript-eslint": "^8.57.0"
+    "typescript-eslint": "^8.57.1"
   }
 }
