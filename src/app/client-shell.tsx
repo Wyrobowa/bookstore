@@ -80,6 +80,7 @@ export default function ClientShell({
           user={userName ? { name: userName } : undefined}
           onLogin={() => router.push('/login')}
           onLogout={handleLogout}
+          maxWidth="90%"
         />
       }
       navbar={
@@ -87,6 +88,7 @@ export default function ClientShell({
           items={navItems}
           activeId={activeNavId}
           onItemClick={handleNavItemClick}
+          maxWidth="90%"
         />
       }
     >
