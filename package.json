@@ -16,22 +16,27 @@
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.2",
-    "next": "^16",
-    "react": "^19",
-    "react-dom": "^19",
-    "tharaday": "^0.5.11"
+    "next": "^16.2.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "tharaday": "^0.7.6"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@types/node": "^25",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@types/node": "^25.5.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
     "babel-plugin-react-compiler": "1.0.0",
-    "eslint": "^10.0.3",
-    "eslint-config-prettier": "^10",
-    "eslint-plugin-prettier": "^5",
-    "prettier": "^3",
-    "typescript": "^5",
-    "typescript-eslint": "^8.57.0"
+    "eslint": "^10.1.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "prettier": "^3.8.1",
+    "typescript": "^6.0.2",
+    "typescript-eslint": "^8.57.2"
+  },
+  "overrides": {
+    "typescript-eslint": {
+      "typescript": "$typescript"
+    }
   }
 }
