@@ -221,7 +221,9 @@ export default function AccountPage() {
                   autoComplete="name"
                   fullWidth
                   value={name}
-                  onChange={(event) => setName(event.target.value)}
+                  onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
+                    setName(event.target.value)
+                  }
                 />
                 <Input
                   label="Email"
@@ -229,7 +231,9 @@ export default function AccountPage() {
                   autoComplete="email"
                   fullWidth
                   value={email}
-                  onChange={(event) => setEmail(event.target.value)}
+                  onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
+                    setEmail(event.target.value)
+                  }
                 />
                 <Input
                   label="New password (optional)"
@@ -237,7 +241,9 @@ export default function AccountPage() {
                   autoComplete="new-password"
                   fullWidth
                   value={password}
-                  onChange={(event) => setPassword(event.target.value)}
+                  onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
+                    setPassword(event.target.value)
+                  }
                 />
                 <Input
                   label="Confirm new password"
@@ -245,7 +251,9 @@ export default function AccountPage() {
                   autoComplete="new-password"
                   fullWidth
                   value={confirmPassword}
-                  onChange={(event) => setConfirmPassword(event.target.value)}
+                  onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
+                    setConfirmPassword(event.target.value)
+                  }
                 />
 
                 {error ? (
