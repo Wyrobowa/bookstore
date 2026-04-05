@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Box, Button, Input, Select } from 'tharaday';
 
 import styles from './BooksFilters.module.css';
@@ -45,7 +45,7 @@ export function BooksFilters({
         <Input
           placeholder="Search by title or author"
           value={searchQuery}
-          onChange={(event) => onSearchQueryChange(event.target.value)}
+          onChange={(event: React.ChangeEvent<HTMLInputElement>) => onSearchQueryChange(event.target.value)}
           fullWidth
         />
         <Button
@@ -74,19 +74,19 @@ export function BooksFilters({
             label="Type"
             value={selectedType}
             options={typeOptions}
-            onChange={(event) => onSelectedTypeChange(event.target.value)}
+            onChange={(event: React.ChangeEvent<HTMLSelectElement>) => onSelectedTypeChange(event.target.value)}
           />
           <Select
             label="Author"
             value={selectedAuthor}
             options={authorOptions}
-            onChange={(event) => onSelectedAuthorChange(event.target.value)}
+            onChange={(event: React.ChangeEvent<HTMLSelectElement>) => onSelectedAuthorChange(event.target.value)}
           />
           <Select
             label="Sort by"
             value={selectedSort}
             options={sortOptions}
-            onChange={(event) => onSelectedSortChange(event.target.value)}
+            onChange={(event: React.ChangeEvent<HTMLSelectElement>) => onSelectedSortChange(event.target.value)}
           />
           <Button variant="outline" intent="neutral" onClick={onClear}>
             Clear filters

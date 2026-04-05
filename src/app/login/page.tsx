@@ -1,7 +1,7 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { FormEvent, useState } from 'react';
+import React, { FormEvent, useState } from 'react';
 import { Box, Button, Card, CardContent, Input, Text } from 'tharaday';
 
 import { loginWithPassword } from '@/lib/auth-api';
@@ -60,7 +60,7 @@ export default function LoginPage() {
                   autoComplete="email"
                   fullWidth
                   value={email}
-                  onChange={(event) => setEmail(event.target.value)}
+                  onChange={(event: React.ChangeEvent<HTMLInputElement>) => setEmail(event.target.value)}
                 />
                 <Input
                   label="Password"
@@ -68,7 +68,7 @@ export default function LoginPage() {
                   autoComplete="current-password"
                   fullWidth
                   value={password}
-                  onChange={(event) => setPassword(event.target.value)}
+                  onChange={(event: React.ChangeEvent<HTMLInputElement>) => setPassword(event.target.value)}
                 />
 
                 {error ? (
