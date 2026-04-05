@@ -60,7 +60,9 @@ export default function LoginPage() {
                   autoComplete="email"
                   fullWidth
                   value={email}
-                  onChange={(event: React.ChangeEvent<HTMLInputElement>) => setEmail(event.target.value)}
+                  onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
+                    setEmail(event.target.value)
+                  }
                 />
                 <Input
                   label="Password"
@@ -68,7 +70,9 @@ export default function LoginPage() {
                   autoComplete="current-password"
                   fullWidth
                   value={password}
-                  onChange={(event: React.ChangeEvent<HTMLInputElement>) => setPassword(event.target.value)}
+                  onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
+                    setPassword(event.target.value)
+                  }
                 />
 
                 {error ? (

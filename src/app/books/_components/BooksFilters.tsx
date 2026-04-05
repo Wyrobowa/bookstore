@@ -45,7 +45,9 @@ export function BooksFilters({
         <Input
           placeholder="Search by title or author"
           value={searchQuery}
-          onChange={(event: React.ChangeEvent<HTMLInputElement>) => onSearchQueryChange(event.target.value)}
+          onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
+            onSearchQueryChange(event.target.value)
+          }
           fullWidth
         />
         <Button
@@ -74,19 +76,25 @@ export function BooksFilters({
             label="Type"
             value={selectedType}
             options={typeOptions}
-            onChange={(event: React.ChangeEvent<HTMLSelectElement>) => onSelectedTypeChange(event.target.value)}
+            onChange={(event: React.ChangeEvent<HTMLSelectElement>) =>
+              onSelectedTypeChange(event.target.value)
+            }
           />
           <Select
             label="Author"
             value={selectedAuthor}
             options={authorOptions}
-            onChange={(event: React.ChangeEvent<HTMLSelectElement>) => onSelectedAuthorChange(event.target.value)}
+            onChange={(event: React.ChangeEvent<HTMLSelectElement>) =>
+              onSelectedAuthorChange(event.target.value)
+            }
           />
           <Select
             label="Sort by"
             value={selectedSort}
             options={sortOptions}
-            onChange={(event: React.ChangeEvent<HTMLSelectElement>) => onSelectedSortChange(event.target.value)}
+            onChange={(event: React.ChangeEvent<HTMLSelectElement>) =>
+              onSelectedSortChange(event.target.value)
+            }
           />
           <Button variant="outline" intent="neutral" onClick={onClear}>
             Clear filters
