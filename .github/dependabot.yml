@@ -9,3 +9,15 @@ updates:
       dependencies:
         patterns:
           - '*'
+
+  # Without this, action versions are never bumped automatically — which is how
+  # the account drifted onto Node 20 actions unnoticed until days before the
+  # runner removal.
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+    groups:
+      actions:
+        patterns:
+          - '*'
