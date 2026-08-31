@@ -5,6 +5,12 @@ updates:
     schedule:
       interval: 'weekly'
     open-pull-requests-limit: 10
+    # typescript-eslint does not support TypeScript 7 yet, and a TS 7 bump makes
+    # eslint fail at config load, which reds the whole verify job.
+    # https://github.com/typescript-eslint/typescript-eslint/issues/10940
+    ignore:
+      - dependency-name: 'typescript'
+        update-types: ['version-update:semver-major']
     groups:
       dependencies:
         patterns:
