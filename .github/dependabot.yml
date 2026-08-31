@@ -15,6 +15,12 @@ updates:
       dependencies:
         patterns:
           - '*'
+        # Majors deliberately fall outside the group so each arrives as its own
+        # reviewable PR — a grouped bump that happened to include three majors is
+        # how flowdo's main went red (WYR-42, WYR-43).
+        update-types:
+          - 'minor'
+          - 'patch'
 
   # Without this, action versions are never bumped automatically — which is how
   # the account drifted onto Node 20 actions unnoticed until days before the
@@ -27,3 +33,9 @@ updates:
       actions:
         patterns:
           - '*'
+        # Majors deliberately fall outside the group so each arrives as its own
+        # reviewable PR — a grouped bump that happened to include three majors is
+        # how flowdo's main went red (WYR-42, WYR-43).
+        update-types:
+          - 'minor'
+          - 'patch'
